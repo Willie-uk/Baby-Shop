@@ -14,7 +14,7 @@ const LandingPage: React.FC = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
         <div className="container">
           <a className="navbar-brand fw-bold" href="#">
-            BabyShop
+            Cindy Baby-Shop
           </a>
           <button
             className="navbar-toggler"
@@ -158,13 +158,13 @@ const LandingPage: React.FC = () => {
             <div className="col-md-6">
               <ul className="list-unstyled text-center">
                 <li className="mb-3">
-                  <strong>Email:</strong> support@babyshop.com
+                  <strong>Email:</strong> support@cindybabyshop.com
                 </li>
                 <li className="mb-3">
-                  <strong>Phone:</strong> +123 456 7890
+                  <strong>Phone:</strong> +254 723 930499
                 </li>
                 <li>
-                  <strong>Address:</strong> 123 Baby Lane, Kidstown, USA
+                  <strong>Address:</strong> Woodley Avenue, Kilimani, Nairobi_Kenya.
                 </li>
               </ul>
             </div>

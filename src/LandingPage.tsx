@@ -1,4 +1,5 @@
 import React from "react";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 
 const LandingPage: React.FC = () => {
   const scrollToSection = (id: string) => {
@@ -11,44 +12,43 @@ const LandingPage: React.FC = () => {
   return (
     <div>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
-        <div className="container">
-          <a className="navbar-brand fw-bold" href="#">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="light"
+        variant="light"
+        fixed="top"
+        className="border-bottom"
+      >
+        <Container>
+          <Navbar.Brand href="#" className="fw-bold">
             Cindy Baby-Shop
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <button
-                  className="btn btn-link nav-link"
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Item>
+                <Button
+                  variant="link"
+                  className="nav-link"
                   onClick={() => scrollToSection("about")}
                 >
                   About
-                </button>
-              </li>
-              <li className="nav-item">
-                <button
-                  className="btn btn-link nav-link"
+                </Button>
+              </Nav.Item>
+              <Nav.Item>
+                <Button
+                  variant="link"
+                  className="nav-link"
                   onClick={() => scrollToSection("contact")}
                 >
                   Contact
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+                </Button>
+              </Nav.Item>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
       {/* Hero Section */}
       <header className="bg-secondary text-white text-center py-5">
